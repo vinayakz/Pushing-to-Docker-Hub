@@ -7,7 +7,9 @@ How to push your repo in docker hub
   
 2. First tag the repository with the one you created on dockerhub (empty one)
     ```sh 
-    $ docker tag hello-world:1.0 vinayakz/devopsjuly22:v1
+    syntax : $ docker tag <existing-image> <hub-user>/<repo-name>[:<tag>]
+    
+    ex : $ docker tag hello-world:1.0 vinayakz/devopsjuly22:v1
     ```
 3. Now login to docker hub using command  
     ```sh
@@ -18,6 +20,8 @@ How to push your repo in docker hub
     ```
 4. Enter the credentials and once succeeded run the following command:   
     ```sh
-    $ docker push vinayakz/devopsjuly22:v1
+    syntax : $ docker push <hub-user>/<repo-name>:<tag>
+    
+    ex : $ docker push vinayakz/devopsjuly22:v1
     ```
 5. Now check the docker hub to confirm if it reflects it.   
